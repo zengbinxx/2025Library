@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>松凤图书馆</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" data-lang-cn="松凤图书馆" data-lang-en="Song Feng Traditional Chinese Culture Library">松凤图书馆</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-lang-cn="关于我们" data-lang-en="About Us">关于我们</a></li>
+                <li><a href="#collections" data-lang-cn="馆藏精选" data-lang-en="Collections">馆藏精选</a></li>
+                <li><a href="#reading" data-lang-cn="在线阅读" data-lang-en="Online Reading">在线阅读</a></li>
+                <li><a href="#contact" data-lang-cn="联系我们" data-lang-en="Contact Us">联系我们</a></li>
+                <li class="lang-switch">
+                    <button onclick="toggleLanguage()" id="langBtn">EN</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title-box">
+            <div class="library-title">
+                <div class="title-chinese">
+                    <div class="main-title" data-lang-cn="松凤" data-lang-en="Song Feng">松凤</div>
+                    <div class="sub-title" data-lang-cn="中华传统文化图书馆" data-lang-en="Traditional Chinese Culture Library">中华传统文化图书馆</div>
+                </div>
+                <div class="title-english">Song Feng Traditional Chinese Culture Library</div>
+            </div>
+        </section>
+
+        <section id="hero">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        <img src="images/carousel/slide1.jpg" alt="古籍典藏">
+                        <div class="carousel-caption">
+                            <h1 data-lang-cn="传承国学经典 弘扬传统文化" data-lang-en="Preserving the Classics of Chinese Learning, Promoting Traditional Culture">传承国学经典 弘扬传统文化</h1>
+                            <p data-lang-cn="汇集儒释道经典著作，打造线上国学殿堂" data-lang-en="Gathering classic works of Confucianism, Buddhism, and Taoism to create an online temple of Chinese scholarship.">汇集儒释道经典著作，打造线上国学殿堂</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/carousel/slide2.jpg" alt="书香氛围">
+                        <div class="carousel-caption">
+                            <h1 data-lang-cn="品读经典 心悟人生" data-lang-en="Reading the Classics, Gaining Insight into Life">品读经典 心悟人生</h1>
+                            <p data-lang-cn="感受传统文化的魅力" data-lang-en="Experiencing the charm of traditional culture.">感受传统文化的魅力</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/carousel/slide3.jpg" alt="文化传承">
+                        <div class="carousel-caption">
+                            <h1 data-lang-cn="知行合一 格物致知" data-lang-en="Unity of Knowledge and Action, Investigating Things to Attain Wisdom">知行合一 格物致知</h1>
+                            <p data-lang-cn="探索东方智慧的殿堂" data-lang-en="Exploring the temple of Eastern wisdom.">探索东方智慧的殿堂</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+                <div class="carousel-dots">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 data-lang-cn="图书馆简介" data-lang-en="Library Introduction">图书馆简介</h2>
+            <div class="about-content">
+                <div class="cn-content">
+                    <p>松凤图书馆位于广东省粤北山区(距广州市约200公里,邻近连州市)，由一处旧祖屋改建而成。三年前，我们向政府提出申请，将这座祖屋改造为图书馆，并获得批准。如今，装修工程已接近尾声，图书馆即将投入使用。</p>
+                    
+                    <p>松凤图书馆旨在弘扬中华优秀传统文化，以书籍为媒介，传承文化精髓。图书馆的日常运营将由一位热爱祖国、拥护党和政府、关爱社会大众、具备良好文化素养与奉献精神的公益人士负责管理。除了确保图书馆正常运作、推广传统文化外，还将组织当地志愿者参与各类公益服务，例如照顾孤寡老人、关爱残障群体、参与生态保护等，积极践行社会责任与仁爱之心。</p>
+                   
+                    <p>我们相信，在中国城乡仍有大量闲置的老屋、破屋和祖屋，若能在政策引导和社会支持下加以利用，许多有责任感的房屋所有者将可能愿意将其用于公益事业。松凤图书馆希望以此为起点，激发更多积极行动，共同推动社会和谐与优秀传统文化的传承发展。</p>
+                    
+                    <p class="gratitude">衷心感谢每一位支持与参与者的关心与支持！</p>
+                </div>
+                <div class="en-content">
+                    <p>Song Feng Library is located in the northern mountainous area of Guangdong Province (about 200 kilometers from Guangzhou City, near Lianzhou City), converted from an ancestral house. Three years ago, we applied to the government to transform this ancestral house into a library, and received approval. Now, the renovation work is nearing completion.</p>
+                    
+                    <p>Song Feng Library aims to promote excellent traditional Chinese culture, using books as a medium to pass on cultural heritage. The daily operation of the library will be managed by a monastic who possesses right understanding and views, delights in practicing the Bodhisattva path, loves the country, supports the party and government, and cares for the people and all beings. Besides ensuring the normal operation of the library and promoting traditional culture, we will also organize local volunteers to participate in charitable activities, such as caring for elderly people living alone and protecting wildlife, practicing the spirit of the Bodhisattva's compassion and generosity. Through these good deeds, we hope to set an example of "maintaining good thoughts, speaking kind words, and doing good deeds," while demonstrating monastics' joyful, bright, and selfless dedication in contemporary society.</p>
+                    
+                    <p>We believe that there are countless unused old houses and ancestral houses across China. With proper guidance and support, many kind-hearted property owners might be willing to dedicate them for charitable purposes.</p>
+                    
+                    <p class="gratitude">We are deeply grateful for the compassion and love of all supporters and participants!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections">
+            <h2 data-lang-cn="馆藏精选" data-lang-en="Collections">馆藏精选</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                    <img src="images/lunyu.jpg" alt="论语">
+                    <h3 data-lang-cn="论语" data-lang-en="The Analects">论语</h3>
+                    <p data-lang-cn="孔子及其弟子的言行记录，儒家思想的精华。" data-lang-en="A record of the words and deeds of Confucius and his disciples, the essence of Confucian thought.">孔子及其弟子的言行记录，儒家思想的精华。</p>
+                </div>
+                <div class="book-card">
+                    <img src="images/daodejing.jpg" alt="道德经">
+                    <h3 data-lang-cn="道德经" data-lang-en="Tao Te Ching">道德经</h3>
+                    <p data-lang-cn="老子的哲学思想精髓，道家文化的根本典籍。" data-lang-en="The quintessence of Laozi's philosophical thought, the foundational classic of Taoist culture.">老子的哲学思想精髓，道家文化的根本典籍。</p>
+                </div>
+                <div class="book-card">
+                    <img src="images/xinjing.jpg" alt="心经">
+                    <h3 data-lang-cn="心经" data-lang-en="Heart Sutra">心经</h3>
+                    <p data-lang-cn="佛教般若系重要经典，揭示'色即是空，空即是色'的般若智慧。" data-lang-en="An important scripture of the Buddhist Prajna tradition, unveiling the wisdom of &quot;form is emptiness, emptiness is form.&quot;">佛教般若系重要经典，揭示"色即是空，空即是色"的般若智慧。</p>
+                </div>
+                <!-- 更多书籍卡片 -->
+            </div>
+        </section>
+
+        <section id="reading">
+            <h2 data-lang-cn="在线阅读" data-lang-en="Online Reading">在线阅读</h2>
+            <div class="reading-interface">
+                <!-- 在线阅读界面将通过JavaScript动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div id="contact" class="footer-section">
+                <h3 data-lang-cn="联系我们" data-lang-en="Contact Us">联系我们</h3>
+                <div class="cn-content">
+                    <p>联系人：羅生</p>
+                    <p>邮箱:Ytluo111@gmail.com</p>
+                    <p>地址:广东省粤北山区(距广州市约200公里,邻近连州市)</p>
+                </div>
+                <div class="en-content">
+                    <p>Contact: Mr. Luo</p>
+                    <p>Email: Ytluo111@gmail.com</p>
+                    <p>Address: Northern Guangdong Mountains (About 200km from Guangzhou, near Lianzhou City)</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 data-lang-cn="关注我们" data-lang-en="Follow Us">关注我们</h3>
+                <div class="social-links">
+                    <!-- 社交媒体链接 -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-lang-cn="© 松凤图书馆 版权所有" data-lang-en="© Song Feng Traditional Chinese Culture Library. All Rights Reserved.">© 松凤图书馆 版权所有</p>
+        </div>
+    </footer>
+
+    <div id="recruitment-dialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-lang-cn="聘 請 書" data-lang-en="Recruitment Notice">聘 請 書</h2>
+            <div class="dialog-text">
+                <div class="cn-content">
+                    <p>尊敬的社会各界热心人士：</p>
+                    <p>在前三年,我们已向政府申请将广东粤北山区(距广州市约200公里,靠近连州市)的祖屋改建为图书馆，并获得了政府的批准。目前装修工程已接近完工。</p>
+                    <p>急聘请一位爱国、爱党、爱人民，具备传统文化素养的志愿者管理图书馆。其日常工作包括维持图书馆正常运作，弘扬中华优秀传统文化；同时组织当地志愿者关爱孤寡老人、残疾人士，参与野生动物保护等公益活动，倡导人人怀善意、说好话、做好事，争做道德文明的榜样。
+                        此外，也鼓励文化工作者在现实社会中展现积极、阳光、无私奉献的精神风貌，起到良好的示范作用。</p>
+                    <p></p>
+                    <p class="gratitude">感谢每一位支持与参与者的关爱与付出！</p>
+                    <div class="contact-info">
+                        <p>联系人：羅生</p>
+                        <p>邮箱:Ytluo111@gmail.com</p>
+                    </div>
+                </div>
+                <div class="en-content">
+                    <p>Dear Virtuous Ones and Kind People, Greetings!</p>
+                    <p>Three years ago, we applied to the government to convert an ancestral house in northern Guangdong (200 kilometers from Guangzhou City, near Lianzhou City) into a library, and received approval. The renovation is now nearly complete.</p>
+                    <p>We are urgently seeking a monastic who possesses right understanding and views, delights in practicing the Bodhisattva path, loves the country, supports the party and government, and cares for the people and all beings to manage the library. The daily responsibilities include overseeing the library's normal operation in promoting excellent Chinese traditional culture, and organizing local volunteers for charitable activities such as caring for elderly people living alone and protecting wildlife, exemplifying the Bodhisattva's practice. We aim to set an example of "maintaining good thoughts, speaking kind words, and doing good deeds," while demonstrating monastics' joyful, bright, and selfless dedication in contemporary society.</p>
+                    <p>In fact, there are countless unused old houses and ancestral houses across China. With proper guidance and support, many kind-hearted property owners might be willing to dedicate them for charitable purposes.</p>
+                    <p class="gratitude">We are deeply grateful for your help!</p>
+                    <div class="contact-info">
+                        <p>Contact: Mr. Luo</p>
+                        <p>Email: Ytluo111@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="carousel.js"></script>
+    <script>
+        // Title box animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const titleBox = document.getElementById('title-box');
+            
+            setTimeout(() => {
+                titleBox.classList.add('collapsed');
+                
+                titleBox.addEventListener('transitionend', () => {
+                    titleBox.style.display = 'none';
+                }, { once: true });
+            }, 3000);
+        });
+
+        // 招聘窗口控制
+        const dialog = document.getElementById('recruitment-dialog');
+        const closeBtn = document.querySelector('.close-btn');
+
+        // 显示对话框
+        setTimeout(() => {
+            dialog.style.display = 'block';
+        }, 1000);
+
+        // 关闭按钮点击事件
+        closeBtn.onclick = function() {
+            dialog.style.display = 'none';
+        }
+
+        // 点击对话框外部关闭
+        window.onclick = function(event) {
+            if (event.target == dialog) {
+                dialog.style.display = 'none';
+            }
+        }
+
+        let isEnglish = false;
+        
+        function toggleLanguage() {
+            isEnglish = !isEnglish;
+            const langBtn = document.getElementById('langBtn');
+            langBtn.textContent = isEnglish ? 'CN' : 'EN';
+            
+            // Update all elements with language attributes
+            document.querySelectorAll('[data-lang-cn]').forEach(element => {
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.value = isEnglish ? 
+                        element.getAttribute('data-lang-en') : 
+                        element.getAttribute('data-lang-cn');
+                } else {
+                    element.textContent = isEnglish ? 
+                        element.getAttribute('data-lang-en') : 
+                        element.getAttribute('data-lang-cn');
+                }
+            });
+            
+            // Toggle content visibility
+            document.querySelectorAll('.cn-content').forEach(element => {
+                element.style.display = isEnglish ? 'none' : 'block';
+            });
+            
+            document.querySelectorAll('.en-content').forEach(element => {
+                element.style.display = isEnglish ? 'block' : 'none';
+            });
+
+            // Update document title
+            document.title = isEnglish ? 
+                "Song Feng Traditional Chinese Culture Library" : 
+                "松凤图书馆";
+        }
+    </script>
+</body>
+</html> 
